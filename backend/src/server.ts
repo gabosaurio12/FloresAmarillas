@@ -16,7 +16,7 @@ app.use(express.json());
 app.get("/api/health", (_req, res) => {
     res.json({
         status: "ok",
-        message: "Backend de FloresMitul funcionando 🌷",
+        message: "Backend de Flores funcionando 🌷",
     });
 });
 
@@ -30,7 +30,7 @@ app.post("/api/proposals", async (req, res) => {
         const proposalId = await saveProposal(proposalData);
 
         const { data: emailData, error: emailError } = await resend.emails.send({
-            from: "FloresMitul <onboarding@resend.dev>",
+            from: "Flores <onboarding@resend.dev>",
             to: [process.env.NOTIFICATION_EMAIL!],
             subject: "¡Cita Agendada!",
             html: `

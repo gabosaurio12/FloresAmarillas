@@ -48,7 +48,7 @@ function FlowerExperience({flowerId}: FlowerExperienceProps) {
                 transition={{ duration: 1.2, ease: "easeOut" }}
             >
                 <p className="flower-intro">
-                    Dale clic a la flor por favor, sus pétalos tienen un mensaje para ti Mitul (dales click)
+                    Dale clic a la flor por favor, sus pétalos tienen un mensaje para ti (dale click)
                 </p>
 
                 <motion.img
